@@ -14,6 +14,6 @@ const Validations = buildValidations({
 export default DS.Model.extend(Validations, {
 
   description: attr('string'),
-  owner: belongsTo('person')
+  owner: belongsTo('application-user')
 
 });
